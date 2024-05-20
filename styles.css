@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6px;
+}
+
+#grid-selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 18px;
+}
+
+#title {
+    color: green;
+}
+
+#select-text {
+    color: blue;
+
+}
+
+#select-button {
+    font-size: 15px;
+    padding: 2px 4px;
+    background: red;
+    color: white;
+    border: 2px;
+    border-radius: 8px;
+}
+
+#select-button:hover {
+    cursor: pointer;
+    background: blue;
+}
+
+#select-button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 2px #666;
+    transform: translateY(0.5px);
+}
+
+#container {
+    width: 750px;
+    height: 750px;
+    display: grid;
+    border: 1px solid black;
+    margin-top: 15px;
+}
+
+#lower-buttons {
+    margin-top: 10px;
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
+
+#black-button {
+    font-size: 15px;
+    padding: 3px 5px;
+    background: black;
+    color: white;
+    border: 2px;
+    border-radius: 8px;
+}
+
+#black-button:active {
+    background-color: black;
+    box-shadow: 0 2px black;
+    transform: translateY(0.5px);
+}
+
+#random-button {
+    font-size: 15px;
+    padding: 3px 5px;
+    background: yellow;
+    color: black;
+    border: 2px;
+    border-radius: 8px;
+}
+
+#random-button:active {
+    background-color: yellow;
+    box-shadow: 0 2px yellow;
+    transform: translateY(0.5px);
+}
+
+#reset-button {
+    font-size: 15px;
+    padding: 3px 5px;
+    background: rgb(40, 224, 178);
+    color: white;
+    border: 2px;
+    border-radius: 8px;
+}
+
+#reset-button:active {
+    background-color: rgb(40, 224, 178);
+    box-shadow: 0 2px rgb(40, 224, 178);
+    transform: translateY(0.5px);
+}
