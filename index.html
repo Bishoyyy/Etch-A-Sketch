@@ -14,7 +14,7 @@
         <h1 id="title">Etch A Sketch</h1>
 
         <div id="grid-selection">
-            <h3 id="select-text">Grid Size :</h3>
+            <h3 id="select-text">First, Choose the Grid Size :</h3>
             <button id="select-button">Select</button>
         </div>
     </div>
@@ -22,9 +22,9 @@
     <div id="container"></div>
 
     <div id="lower-buttons">
-        <button id="black-button">Black</button>
-        <button id="random-button">Random</button>
-        <button id="reset-button">Reset</button>
+        <button id="black-button" onclick="setColor('black')">Black</button>
+        <button id="random-button" onclick="setColor('random')">Random</button>
+        <button id="reset-button" onclick="resetBoard()">Reset</button>
     </div>
 
     <script src="script.js"></script>

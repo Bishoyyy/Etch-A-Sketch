@@ -1,8 +1,10 @@
+let color = "black";
+
 document.addEventListener("DOMContentLoaded", function () {
-    alert("You are about to show off your talent!") 
+    alert("You are about to show off your talent!")
     let selectButton = document.querySelector("#select-button");
 
-    selectButton.addEventListener("click", function(){
+    selectButton.addEventListener("click", function () {
         let boardSize = getSize();
         createBoard(boardSize);
     })
@@ -18,6 +20,7 @@ function createBoard(size) {
 
     for (let index = 0; index < numDivs; index++) {
         let div = document.createElement("div");
+        div.addEventListener("mouseover", colorDiv);
         board.insertAdjacentElement("beforeend", div);
     }
 };
@@ -37,6 +40,23 @@ function getSize() {
     }
 };
 
+function colorDiv() {
+    if (color == "random") {
+        this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+    }
+    else {
+        this.style.backgroundColor = "black";
+    }
+};
+
+function setColor(colorChoice) {
+    color = colorChoice;
+};
+
+function resetBoard() {
+    let resetDivs = document.querySelectorAll("div");
+    resetDivs.forEach((div) => div.style.backgroundColor = "white");
+}
 
 
 
